@@ -1,7 +1,7 @@
 # Sinan
 Dicionários de dados Sinan em arquivo JSON
 
-### Leishmaniose Tegumentar: https://raw.githubusercontent.com/Ruanever/sinan/refs/heads/main/LTAN.JSON
+### Leishmaniose Tegumentar: https://raw.githubusercontent.com/Ruanever/Sinan/refs/heads/main/LTAN.JSON
 
 ## Exemplo de como usá-lo:
 
