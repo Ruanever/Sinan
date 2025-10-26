@@ -1,0 +1,327 @@
+{
+    "TP_NOT": {
+        "rename": "tipo_notificacao",
+        "labels": {
+            "1": "Negativa",
+            "2": "Individual",
+            "3": "Surto",
+            "4": "Agregado"
+        }
+    },
+    "ID_AGRAVO": {
+        "rename": "CID"
+    },
+    "DT_NOTIFIC": {
+        "rename": "data_notificacao"
+    },
+    "SEM_NOT": {
+        "rename": "semana_notificacao"
+    },
+    "NU_ANO": {
+        "rename": "ano_notificacao"
+    },
+    "SG_UF_NOT": {
+        "rename": "estado_notificacao",
+        "labels": {
+            "11": "Rondônia",
+            "12": "Acre",
+            "13": "Amazonas",
+            "14": "Roraima",
+            "15": "Pará",
+            "16": "Amapá",
+            "17": "Tocantins",
+            "21": "Maranhão",
+            "22": "Piauí",
+            "23": "Ceará",
+            "24": "Rio Grande do Norte",
+            "25": "Paraíba",
+            "26": "Pernambuco",
+            "27": "Alagoas",
+            "28": "Sergipe",
+            "29": "Bahia",
+            "31": "Minas Gerais",
+            "32": "Espírito Santo",
+            "33": "Rio de Janeiro",
+            "35": "São Paulo",
+            "41": "Paraná",
+            "42": "Santa Catarina",
+            "43": "Rio Grande do Sul",
+            "50": "Mato Grosso do Sul",
+            "51": "Mato Grosso",
+            "52": "Goiás",
+            "53": "Distrito Federal"
+        }
+    },
+    "ID_MUNICIP": {
+        "rename": "municipio_notificacao"
+    },
+    "ID_REGIONA": {
+        "rename": "regiao_saude"
+    },
+    "ID_UNIDADE": {
+        "rename": "unidade_saude"
+    },
+    "DT_DIAG": {
+        "rename": "data_diagnostico"
+    },
+    "SEM_DIAG": {
+        "rename": "semana_diagnostico"
+    },
+    "ANO_NASC": {
+        "rename": "nascimento"
+    },
+    "NU_IDADE_N": {
+        "rename": "idade_codificada"
+    },
+    "CS_SEXO": {
+        "rename": "sexo",
+        "labels": {
+            "M": "Masculino",
+            "F": "Feminino",
+            "I": "Ignorado"
+        }
+    },
+    "CS_GESTANT": {
+        "rename": "gestante",
+        "labels": {
+            "1": "1º Trimestre",
+            "2": "2º Trimestre",
+            "3": "3º Trimestre",
+            "4": "Idade gestacional ignorada",
+            "5": "Não",
+            "6": "Não se aplica",
+            "9": "Ignorado"
+        }
+    },
+    "CS_RACA": {
+        "rename": "raca",
+        "labels": {
+            "1": "Branca",
+            "2": "Preta",
+            "3": "Amarela",
+            "4": "Parda",
+            "5": "Indígena",
+            "9": "Ignorado"
+        }
+    },
+    "CS_ESCOL_N": {
+        "rename": "escolaridade",
+        "labels": {
+            "1": "Fundamental I incompleto",
+            "2": "Fundamental I completo",
+            "3": "Fundamental II incompleto",
+            "4": "Fundamental II completo",
+            "5": "Médio incompleto",
+            "6": "Médio completo",
+            "7": "Superior incompleto",
+            "8": "Superior completo",
+            "9": "Ignorado",
+            "10": "Não se aplica"
+        }
+    },
+    "SG_UF": {
+        "rename": "uf"
+    },
+    "ID_MN_RESI": {
+        "rename": "municipio_residencia"
+    },
+    "ID_RE_RESI": {
+        "rename": "regiao_residencia"
+    },
+    "ID_PAIS": {
+        "rename": "pais"
+    },
+    "CLI_CUTANE": {
+        "rename": "lesao_cutanea",
+        "labels": {
+            "1": "Sim",
+            "2": "Não"
+        }
+    },
+    "CLI_MUCOSA": {
+        "rename": "lesao_mucosa",
+        "labels": {
+            "1": "Sim",
+            "2": "Não"
+        }
+    },
+    "CLI_CICATR": {
+        "rename": "cicatriz_cutanea",
+        "labels": {
+            "1": "Sim",
+            "2": "Não"
+        }
+    },
+    "CLI_CO_HIV": {
+        "rename": "coinfeccao_hiv",
+        "labels": {
+            "1": "Sim",
+            "2": "Não",
+            "9": "Ignorado"
+        }
+    },
+    "LAB_PARASI": {
+        "rename": "parasitologico_direto",
+        "labels": {
+            "1": "Positivo",
+            "2": "Negativo",
+            "3": "Não realizado"
+        }
+    },
+    "LAB_IRM": {
+        "rename": "irm",
+        "labels": {
+            "1": "Positivo",
+            "2": "Negativo",
+            "3": "Não realizado"
+        }
+    },
+    "LAB_HISTOP": {
+        "rename": "histopatologia",
+        "labels": {
+            "1": "Encontro do Parasita",
+            "2": "Compatível",
+            "3": "Não compatível",
+            "4": "Não realizado"
+        }
+    },
+    "CLA_TIPO_N": {
+        "rename": "tipo_entrada",
+        "labels": {
+            "1": "Caso novo",
+            "2": "Recidiva",
+            "3": "Transferência",
+            "9": "Ignorado"
+        }
+    },
+    "CLAS_FORMA": {
+        "rename": "forma_clinica",
+        "labels": {
+            "1": "Cutânea",
+            "2": "Mucosa",
+            "9": "Ignorada"
+        }
+    },
+    "TRA_DROGA_": {
+        "rename": "droga_inicial",
+        "labels": {
+            "1": "Antimonial Pentavalente",
+            "2": "Anfotericina B",
+            "3": "Pentamidina",
+            "4": "Outras",
+            "5": "Não utilizada"
+        }
+    },
+    "TRA_DOSE": {
+        "rename": "dose_prescrita",
+        "labels": {
+            "1": "Menor que 10",
+            "2": "Maior ou igual a 10 e menor que 15",
+            "3": "Igual a 15",
+            "4": "Maior ou igual a 15 e menor que 20",
+            "5": "Maior ou igual a 20"
+        }
+    },
+    "TRA_OUTR_N": {
+        "rename": "droga_falencia",
+        "labels": {
+            "1": "Anfotericina B",
+            "2": "Pentamidina",
+            "3": "Outros",
+            "4": "Não se aplica"
+        }
+    },
+    "CRITERIO": {
+        "rename": "criterio_confirmacao",
+        "labels": {
+            "1": "Laboratorial",
+            "2": "Clínico-epidemiológico"
+        }
+    },
+    "CON_CLASS_": {
+        "rename": "classificacao_epidemiologica",
+        "labels": {
+            "1": "Autóctone",
+            "2": "Importado",
+            "3": "Indeterminado"
+        }
+    },
+    "TPAUTOCTO": {
+        "rename": "autoctone_residencia",
+        "labels": {
+            "1": "Sim",
+            "2": "Não",
+            "3": "Indeterminado"
+        }
+    },
+    "COUFINF": {
+        "rename": "uf_infeccao"
+    },
+    "COPAISINF": {
+        "rename": "pais_infeccao"
+    },
+    "COMUNINF": {
+        "rename": "municipio_infeccao"
+    },
+    "CODISINF": {
+        "rename": "distrito_infeccao"
+    },
+    "CO_BAINFC": {
+        "rename": "codigo_bairro_infeccao"
+    },
+    "NOBAIINF": {
+        "rename": "nome_bairro_infeccao"
+    },
+    "DOENCA_TRA": {
+        "rename": "doenca_relacionada_trabalho",
+        "labels": {
+            "1": "Sim",
+            "2": "Não",
+            "9": "Ignorado"
+        }
+    },
+    "EVOLUCAO": {
+        "rename": "evolucao_caso",
+        "labels": {
+            "1": "Alta por cura",
+            "2": "Abandono",
+            "3": "Óbito por LTA",
+            "4": "Óbito por outras causas",
+            "5": "Transferência",
+            "6": "Mudança de diagnóstico"
+        }
+    },
+    "NU_LOTE_I": {
+        "rename": "lote_transferencia_investigacao"
+    },
+    "COUFCOM1": {
+        "rename": "uf_complementar_1"
+    },
+    "COUFCOM2": {
+        "rename": "uf_complementar_2"
+    },
+    "COUFCOM3": {
+        "rename": "uf_complementar_3"
+    },
+    "COMUNCOM1": {
+        "rename": "municipio_complementar_1"
+    },
+    "COMUNCOM2": {
+        "rename": "municipio_complementar_2"
+    },
+    "COMUNCOM3": {
+        "rename": "municipio_complementar_3"
+    },
+    "COPAISCOM1": {
+        "rename": "pais_complementar_1"
+    },
+    "COPAISCOM2": {
+        "rename": "pais_complementar_2"
+    },
+    "COPAISCOM3": {
+        "rename": "pais_complementar_3"
+    },
+    "DS_OBS": {
+        "rename": "observacoes"
+    }
+}
