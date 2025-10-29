@@ -125,7 +125,7 @@
     "ID_MN_RESI": {
         "rename": "municipio_residencia"
     },
-    "ID_RE_RESI": {
+    "ID_RG_RESI": {
         "rename": "regiao_residencia"
     },
     "ID_PAIS": {
@@ -137,6 +137,64 @@
             "1": "Sim",
             "2": "Não"
         }
+    },
+    "NUDUPLIC_N": {
+        "rename": "duplicatas",
+        "labels": {
+            "0": "Não identificado"
+            "1": "Não é duplicata",
+            "2": "Sim é duplicata"
+        }        
+    },
+    "DT_DIGITA": {
+        "rename": "data_digitação"
+    }, 
+    "DT_TRANSUS": {
+        "rename": "data_transferencia_unidade"
+    },
+    "DT_TRANSDM": {
+        "rename": "data_transferencia_distrito"
+    }, 
+    "DT_TRANSSM": {
+        "rename": "data_transferencia_secretaria_municipal"
+    },
+    "DT_TRANSRM": {
+        "rename": "data_transferencia_regional_municipal"
+    }, 
+    "DT_TRANSRS": {
+        "rename": "data_tranferencia_regional_saude"
+    },
+    "DT_TRANSSE": {
+        "rename": "data_tranferencia_secretaria_estadual"
+    },
+    "NU_LOTE_V": {
+        "rename": "num_lote_vertical"
+    },
+    "NU_LOTE_H": {
+        "rename": "num_lote_horizontal"
+    }, 
+    "CS_FLXRET": {
+        "rename": "fluxo_retorno",
+        "labels": {
+            "0": "Não",
+            "1": "Habilitado para envio",
+            "2": "Enviado"
+        }
+    }, 
+    "FLXRECEBI": {
+        "rename": "recebida_por_fluxo_retorno"
+    }, 
+    "MIGRADO_W": {
+        "rename": "identificacao_migracao"
+        "labels": {
+            "1": "Migrado do Sinan Windows"
+        }
+    },
+    "DT_INVEST": {
+        "rename": "data_investigacao"
+    }, 
+    "ID_OCUPA_N": {
+         "rename": "ocupacao"
     },
     "CLI_MUCOSA": {
         "rename": "lesao_mucosa",
@@ -291,6 +349,12 @@
             "6": "Mudança de diagnóstico"
         }
     },
+    "DT_OBITO": {
+        "rename": "data_obito"
+    }, 
+    "DT_ENCERRA": {
+        "rename": "data_encerramento"
+    },
     "NU_LOTE_I": {
         "rename": "lote_transferencia_investigacao"
     },
@@ -325,3 +389,4 @@
         "rename": "observacoes"
     }
 }
+
