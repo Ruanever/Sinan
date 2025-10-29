@@ -141,7 +141,7 @@
     "NUDUPLIC_N": {
         "rename": "duplicatas",
         "labels": {
-            "0": "Não identificado"
+            "0": "Não identificado",
             "1": "Não é duplicata",
             "2": "Sim é duplicata"
         }        
@@ -389,4 +389,5 @@
         "rename": "observacoes"
     }
 }
+
 
