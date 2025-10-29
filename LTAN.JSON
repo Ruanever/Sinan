@@ -185,7 +185,7 @@
         "rename": "recebida_por_fluxo_retorno"
     }, 
     "MIGRADO_W": {
-        "rename": "identificacao_migracao"
+        "rename": "identificacao_migracao",
         "labels": {
             "1": "Migrado do Sinan Windows"
         }
@@ -389,5 +389,3 @@
         "rename": "observacoes"
     }
 }
-
-
