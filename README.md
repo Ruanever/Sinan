@@ -35,3 +35,22 @@ for var, info in cod.items():
 
 # Display do DataFrame transformado
 display(df.head())
+
+Experimental:
+---
+
+### ✅ Como usar depois
+
+Quando terminar de subir todos os arquivos, qualquer pessoa pode instalar o pacote diretamente do seu repositório **Sinan**:
+
+```bash
+pip install git+https://github.com/Ruanever/Sinan.git
+
+
+from tratamento_sus import aplicar_dicionario
+import pandas as pd
+
+df = pd.read_csv("LTAN.csv")
+df_tratado = aplicar_dicionario(df, "LTAN")
+print(df_tratado.head())
+
