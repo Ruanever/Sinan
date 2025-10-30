@@ -36,11 +36,8 @@ def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
 
     # ✅ Pré-processamento antes do dicionário
     for cname in df.columns:
-        try:
-            if cname.startswith("DT_"):
-                df[cname] = pd.to_datetime(df[cname], errors="coerce")
-        except ValueError:
-         continue
+         if cname.startswith("DT_"):
+             df[cname] = pd.to_datetime(df[cname], errors="coerce")
 
     dicionario = carregar_dicionario(banco)
 
