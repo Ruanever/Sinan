@@ -8,7 +8,7 @@
       "4": "Agregado"
     }
   },
-  "ID_AGRAVO": { "rename": "cid" },
+  "ID_AGRAVO": { "rename": "CID" },
   "DT_NOTIFIC": { "rename": "data_notificacao" },
   "SEM_NOT": { "rename": "semana_notificacao" },
   "NU_ANO": { "rename": "ano_notificacao" },
