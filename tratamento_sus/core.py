@@ -19,6 +19,7 @@ def carregar_dicionario(banco: str) -> dict:
 def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
     """
     Aplica o dicionário do banco informado ao DataFrame:
+      - Pré-processa variáveis (datas e IDs)
       - Renomeia as colunas conforme o campo 'rename'
       - Decodifica os valores conforme o campo 'labels'
     
@@ -29,8 +30,21 @@ def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
     Retorna:
       DataFrame com variáveis tratadas e valores decodificados
     """
-    dicionario = carregar_dicionario(banco)
+    
+    # Criar cópia para não modificar o original
     df = df.copy()
+
+    # ✅ Pré-processamento antes do dicionário
+    for cname in df.columns:
+        if cname.startswith("DT_"):
+            df[cname] = pd.to_datetime(df[cname], errors="coerce")
+        elif cname.startswith("ID_"):
+            try:
+                df[cname] = pd.to_numeric(df[cname], errors="coerce")
+            except ValueError:
+                continue
+
+    dicionario = carregar_dicionario(banco)
 
     # Renomear colunas
     renomear = {var: info["rename"] for var, info in dicionario.items() if "rename" in info}
@@ -44,4 +58,8 @@ def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
             if nova_col in df.columns:
                 df[nova_col] = df[nova_col].astype(str).replace(labels)
 
+    # Exibir info do dataframe após tratamento
+    print("\n✅ DataFrame processado:")
+    df.info()
+    
     return df
