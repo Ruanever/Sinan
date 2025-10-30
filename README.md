@@ -3,6 +3,7 @@
 Biblioteca Python para **rotulação automática dos dados dos sistemas do SINAN**, utilizando dicionários JSON públicos.  
 Permite **renomear variáveis e decodificar valores categóricos** de forma simples e rápida.
 
+Obs.: PRECISA BAIXAR O BANCO ANTES VIA PYSUS
 ---
 
 ## ✅ Sistemas disponíveis
@@ -10,7 +11,7 @@ Permite **renomear variáveis e decodificar valores categóricos** de forma simp
 | Código | Sistema |
 |--------|---------|
 | `LTAN` | Leishmaniose Tegumentar Americana |
-
+| `LEIV` | Leishmaniose Visceral |
 Outros dicionários estarão disponíveis em breve.
 
 ---
