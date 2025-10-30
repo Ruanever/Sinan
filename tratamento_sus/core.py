@@ -36,8 +36,26 @@ def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
 
     # ✅ Pré-processamento antes do dicionário
     for cname in df.columns:
-         if cname.startswith("DT_"):
-             df[cname] = pd.to_datetime(df[cname], errors="coerce")
+        if cname.startswith("DT_"):
+            # Tenta formato padrão dd/mm/yyyy primeiro
+            df[cname] = pd.to_datetime(df[cname], format="%d/%m/%Y", errors="coerce")
+        
+            # Para qualquer caso fora do padrão, tenta conversão geral
+            mask = df[cname].isna() & df[cname].notna()
+        if mask.any():
+            df.loc[mask, cname] = pd.to_datetime(df.loc[mask, cname], errors="coerce")
+    
+    elif cname.startswith("ID_"):
+    # Não converter o CID para numérico
+    if cname == "ID_AGRAVO":
+        df[cname] = df[cname].astype(str)
+    else:
+        # Converte somente se todos valores forem numéricos
+        if df[cname].astype(str).str.isnumeric().all():
+            df[cname] = pd.to_numeric(df[cname], errors="coerce")
+        else:
+            df[cname] = df[cname].astype(str)
+
 
     dicionario = carregar_dicionario(banco)
 
