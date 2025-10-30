@@ -36,7 +36,7 @@ def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
 
         # ----- IDs (manter tudo como string) -----
         elif cname.startswith("ID_"):
-            df[cname] = df[cname].astype(str)
+            df[cname] = df[cname].astype('object')
 
     # Carrega dicionário e aplica renomeações / labels
     dicionario = carregar_dicionario(banco)
