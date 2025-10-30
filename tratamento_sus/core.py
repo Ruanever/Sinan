@@ -21,42 +21,22 @@ def aplicar_dicionario(df: pd.DataFrame, banco: str) -> pd.DataFrame:
     df = df.copy()
 
     # Pré-processamento robusto
+    # === PRÉ-PROCESSAMENTO ===
     for cname in df.columns:
-        # --- DATAS: tenta dd/mm/YYYY primeiro, depois fallback ---
+
+        # ----- Datas -----
         if cname.startswith("DT_"):
             orig = df[cname]
-            # tenta formato comum do SINAN
             df[cname] = pd.to_datetime(orig, format="%d/%m/%Y", errors="coerce")
 
-            # se algum valor não era nulo e virou NaT, tenta conversão geral
+            # fallback: só tenta converter quem falhou
             mask = orig.notna() & df[cname].isna()
             if mask.any():
                 df.loc[mask, cname] = pd.to_datetime(orig[mask], errors="coerce")
 
-        # --- IDS: regra segura para não apagar CID alfanumérico ---
+        # ----- IDs (manter tudo como string) -----
         elif cname.startswith("ID_"):
-            # sempre manter ID_AGRAVO como string (CID alfanumérico)
-            if cname == "ID_AGRAVO":
-                df[cname] = df[cname].astype(str)
-                continue
-
-            s = df[cname].astype(str)
-
-            # se houver pelo menos um caractere alfabético, manter como string
-            if s.str.contains(r"[A-Za-z]", na=False).any():
-                df[cname] = s
-                continue
-
-            # caso contrário, tenta converter para numérico
-            num = pd.to_numeric(s.str.replace(r"[,\s]", "", regex=True), errors="coerce")
-
-            # se todos os valores numéricos (não-nulos) forem inteiros, usar Int64 (nullable)
-            non_na = num.dropna()
-            if not non_na.empty and (non_na % 1 == 0).all():
-                df[cname] = num.astype("Int64")
-            else:
-                # mantém float (ou NaN) para valores com casas decimais
-                df[cname] = num
+            df[cname] = df[cname].astype(str)
 
     # Carrega dicionário e aplica renomeações / labels
     dicionario = carregar_dicionario(banco)
