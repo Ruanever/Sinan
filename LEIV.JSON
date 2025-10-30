@@ -1,0 +1,252 @@
+{
+  "TP_NOT": {
+    "rename": "tipo_notificacao",
+    "labels": {
+      "1": "Negativa",
+      "2": "Individual",
+      "3": "Surto",
+      "4": "Agregado"
+    }
+  },
+  "ID_AGRAVO": { "rename": "cid" },
+  "DT_NOTIFIC": { "rename": "data_notificacao" },
+  "SEM_NOT": { "rename": "semana_notificacao" },
+  "NU_ANO": { "rename": "ano_notificacao" },
+
+  "SG_UF_NOT": {
+    "rename": "estado_notificacao",
+    "labels": {
+      "11": "Rondônia", "12": "Acre", "13": "Amazonas", "14": "Roraima",
+      "15": "Pará", "16": "Amapá", "17": "Tocantins", "21": "Maranhão",
+      "22": "Piauí", "23": "Ceará", "24": "Rio Grande do Norte",
+      "25": "Paraíba", "26": "Pernambuco", "27": "Alagoas", "28": "Sergipe",
+      "29": "Bahia", "31": "Minas Gerais", "32": "Espírito Santo",
+      "33": "Rio de Janeiro", "35": "São Paulo", "41": "Paraná",
+      "42": "Santa Catarina", "43": "Rio Grande do Sul", "50": "Mato Grosso do Sul",
+      "51": "Mato Grosso", "52": "Goiás", "53": "Distrito Federal"
+    }
+  },
+
+  "ID_MUNICIP": { "rename": "municipio_notificacao" },
+  "ID_REGIONA": { "rename": "regiao_saude" },
+  "ID_UNIDADE": { "rename": "unidade_saude" },
+
+  "DT_SIN_PRI": { "rename": "data_primeiros_sintomas" },
+  "SEM_PRI": { "rename": "semana_primeiros_sintomas" },
+
+  "ANO_NASC": { "rename": "nascimento" },
+  "NU_IDADE_N": { "rename": "idade_codificada" },
+
+  "CS_SEXO": {
+    "rename": "sexo",
+    "labels": {
+      "M": "Masculino",
+      "F": "Feminino",
+      "I": "Ignorado"
+    }
+  },
+
+  "CS_GESTANT": {
+    "rename": "gestante",
+    "labels": {
+      "1": "1º Trimestre",
+      "2": "2º Trimestre",
+      "3": "3º Trimestre",
+      "4": "Idade gestacional ignorada",
+      "5": "Não",
+      "6": "Não se aplica",
+      "9": "Ignorado"
+    }
+  },
+
+  "CS_RACA": {
+    "rename": "raca",
+    "labels": {
+      "1": "Branca",
+      "2": "Preta",
+      "3": "Amarela",
+      "4": "Parda",
+      "5": "Indígena",
+      "9": "Ignorado"
+    }
+  },
+
+  "CS_ESCOL_N": {
+    "rename": "escolaridade",
+    "labels": {
+      "1": "Fundamental I incompleto",
+      "2": "Fundamental I completo",
+      "3": "Fundamental II incompleto",
+      "4": "Fundamental II completo",
+      "5": "Médio incompleto",
+      "6": "Médio completo",
+      "7": "Superior incompleto",
+      "8": "Superior completo",
+      "9": "Ignorado",
+      "10": "Não se aplica"
+    }
+  },
+
+  "SG_UF": { "rename": "uf" },
+  "ID_MN_RESI": { "rename": "municipio_residencia" },
+  "ID_RG_RESI": { "rename": "regiao_residencia" },
+  "ID_PAIS": { "rename": "pais" },
+
+  "NDUPLIC_N": { "rename": "duplicidade" },
+
+  "DT_DIGITA": { "rename": "data_digitacao" },
+
+  "CS_FLXRET": {
+    "rename": "fluxo_retorno",
+    "labels": {
+      "0": "Não",
+      "1": "Habilitado para envio",
+      "2": "Enviado"
+    }
+  },
+
+  "FLXRECEBI": { "rename": "recebida_por_fluxo_retorno" },
+
+  "MIGRADO_W": {
+    "rename": "identificacao_migracao",
+    "labels": { "1": "Migrado do Sinan Windows" }
+  },
+
+  "DT_INVEST": { "rename": "data_investigacao" },
+  "ID_OCUPA_N": { "rename": "ocupacao" },
+
+  "FEBRE": { "rename": "febre",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+  },
+  "FRAQUEZA": { "rename": "fraqueza",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "EDEMA": { "rename": "edema",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "EMAGRA": { "rename": "emagrecimento",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "TOSSE": { "rename": "tosse",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "PALIDEZ": { "rename": "palidez",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "BACO": { "rename": "aumento_baco",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "INFECCIOSO": { "rename": "quadro_infeccioso",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "FEN_HEMORR": { "rename": "hemorragia",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "FIGADO": { "rename": "aumento_figado",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "ICTERICIA": { "rename": "ictericia",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "OUTROS": { "rename": "outros_sintomas",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+  "OUTROS_ESP": { "rename": "outros_sintomas_especificar" },
+
+  "HIV": { "rename": "coinfeccao_hiv",
+    "labels": {"1": "Sim", "2": "Não", "9": "Ignorado"}
+},
+
+  "DIAG_PAR_N": { "rename": "diagnostico_parasitologico",
+    "labels": {"1": "Positivo", "2": "Negativo", "9": "Não realizado"}
+},
+  "IFI": { "rename": "diagnostico_ifi",
+    "labels": {"1": "Positivo", "2": "Negativo", "9": "Não realizado"}
+},
+  "OUTRO": { "rename": "diagnostico_imuno_outro",
+    "labels": {"1": "Positivo", "2": "Negativo", "9": "Não realizado"}
+},
+
+  "ENTRADA": { "rename": "tipo_entrada",
+    "labels": {"1": "Caso novo", "2": "Recidiva", "3": "Transferência", "9": "Ignorado"}
+},
+
+  "TRATAMENTO": { "rename": "data_inicio_tratamento" },
+  "DROGA": { "rename": "droga_inicial",
+      "labels": {"1": "Antimonial Pentavalente", "2": "Anfotericina b", "3": "Pentamidina", "4": "Anfotericina b lipossomal", "5": "Outra", "9": "Não realizada"}
+},
+  "PESO": { "rename": "peso" },
+  "DOSE": { "rename": "dose",
+    "labels": {"1": "≥10 e <15", "2": "≥15 e <20", "3": "≥20"}
+},
+  "AMPOLAS": { "rename": "ampolas" },
+  "FALENCIA": { "rename": "falencia_tratamento",
+    "labels": {"1": "Anfotericina B", "2": "Anfotericina B lipossomal", "3": "Outras", "4": "Não se aplica"}
+},
+
+  "CLASSI_FIN": { "rename": "classificacao_final",
+    "labels": {"1": "Confirmado", "2": "Descartado"}
+},
+
+  "CRITERIO": {
+    "rename": "criterio_confirmacao",
+    "labels": {
+      "1": "Laboratorial",
+      "2": "Clínico-epidemiológico"
+    }
+  },
+
+  "TPAUTOCTO": {
+    "rename": "autoctone_residencia",
+    "labels": {
+      "1": "Sim",
+      "2": "Não",
+      "3": "Indeterminado"
+    }
+  },
+
+  "COUFINF": { "rename": "uf_infeccao" },
+  "COPAISINF": { "rename": "pais_infeccao" },
+  "COMUNINF": { "rename": "municipio_infeccao" },
+
+  "DOENCA_TRA": {
+    "rename": "doenca_relacionada_trabalho",
+    "labels": {
+      "1": "Sim",
+      "2": "Não",
+      "9": "Ignorado"
+    }
+  },
+
+  "EVOLUCAO": {
+    "rename": "evolucao_caso",
+    "labels": {
+      "1": "Alta por cura",
+      "2": "Abandono",
+      "3": "Óbito por LV",
+      "4": "Óbito por outras causas",
+      "5": "Transferência",
+      "6": "Mudança de diagnóstico"
+    }
+  },
+
+  "DT_OBITO": { "rename": "data_obito" },
+  "DT_ENCERRA": { "rename": "data_encerramento" },
+
+  "DT_DESLC1": { "rename": "data_deslocamento_1" },
+  "DS_MUN_1": { "rename": "municipio_deslocamento_1" },
+  "CO_UF_1": { "rename": "uf_deslocamento_1" },
+  "CO_PAIS_1": { "rename": "pais_deslocamento_1" },
+  "DS_TRANS_1": { "rename": "transporte_1" },
+
+  "DT_DESLC2": { "rename": "data_deslocamento_2" },
+  "DS_MUN_2": { "rename": "municipio_deslocamento_2" },
+  "CO_UF_2": { "rename": "uf_deslocamento_2" },
+  "CO_PAIS_2": { "rename": "pais_deslocamento_2" },
+  "DS_TRANS_2": { "rename": "transporte_2" },
+
+  "DT_DESLC3": { "rename": "data_deslocamento_3" },
+  "DS_MUN_3": { "rename": "municipio_deslocamento_3" },
+  "CO_UF_3": { "rename": "uf_deslocamento_3" },
+  "CO_PAIS_3": { "rename": "pais_deslocamento_3" }
+}
